@@ -85,7 +85,7 @@ NASA POWER variable	Variable used in the study-**
 | Dropout Rate | Dropout = 0.20; Recurrent dropout = 0.10 | LR Schedule | Fixed learning rate | Dropout = **0.20**; No learning rate scheduler |
 | Framework | TensorFlow/Keras | Random Seed | 7, 21, 42, 84, 123 | TensorFlow/Keras; Reporting seed = **42** |
 
-<img width="975" height="564" alt="image" src="https://github.com/user-attachments/assets/cd03dc2c-8d8c-438b-9d69-8ffa0c75e72e" />
+![Learning Rate Optimization](figures/Figure%201%20Learning%20Rate%20Optimization%20Sensitivity%20Curve.png)
 
 **Figure 1. Learning-rate optimization sensitivity curve**
 
@@ -93,7 +93,7 @@ NASA POWER variable	Variable used in the study-**
 
 ## Training Stability and Regularization
 
-<img width="975" height="564" alt="image" src="https://github.com/user-attachments/assets/1c51cb44-faa0-4928-b8fc-72808c947fcc" />
+![Huber Loss](figures/Figure%202%20Training%20and%20Validation%20Huber%20Loss%20of%20the%20Selected%20Bi-LSTM.png)
 
 **Figure 2. Training and validation of the Huber loss of the selected Bi-LSTM**
 
@@ -102,13 +102,13 @@ NASA POWER variable	Variable used in the study-**
 ## 6. Results and Discussion 
 ## Historical Climate Characteristics
 
-<img width="781" height="627" alt="image" src="https://github.com/user-attachments/assets/dfc2e5e5-5290-4d72-9e90-af71e912e694" />
+![Heatmap](figures/Figure%203%20historical_feature_correlation_heatmap.png)
 
 **Figure 3. Historical feature correlation heatmap for Bogura**
 
 **The historical correlation analysis shows the relationships between the climatic variables (Figure 3). Rainfall positively correlated with humidity (r = 0.61) and temperature (r = 0.54) while showing insignificant correlation with solar radiation (r = 0.03). It demonstrates that rainfall variability is more significantly associated with seasonal temperature and moisture in Bogura.**
 
-<img width="975" height="736" alt="image" src="https://github.com/user-attachments/assets/f9826265-d173-41db-87d4-61419d6b8f76" />
+![Trend](figures/Figure%204%20long_term_trend_seasonality_decomposition.png)
 
 **Figure 4. Long-term rainfall trend and seasonality decomposition**
 
@@ -125,7 +125,7 @@ NASA POWER variable	Variable used in the study-**
 
 **The table shows that the rainfall forecast deviated from the observed values by 53.845 mm each month on average. During the extreme rainfall months, the model made more errors, so the RMSE was greater than the MAE. The model predicted approximately 83.3% of rainfall variability. On the other hand, the model predicted around 84.0% of solar radiation variability, showing relatively strong seasonal observability. Overall, the model achieves an average NRMSE of 8.21% and NMAE of 6.50%, showing comparatively low prediction errors.**
 
-<img width="980" height="695" alt="image" src="https://github.com/user-attachments/assets/d430778a-8cdb-4a13-b8a3-a5fbb0147f2b" />
+![Forecast](figures/Figure%205%20Rainfall-Solar%20Forecast%20with%20SRA-Based%20Wet-Dry%20Classification.png)
 
 **Figure 5. Rainfall–solar forecast with SRA-based wet–dry classification**
 
