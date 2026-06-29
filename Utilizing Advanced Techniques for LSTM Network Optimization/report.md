@@ -44,7 +44,7 @@
 ## 2.3 Effect of Data Scaling on Training Stability
 **With MinMax scaling, validation RMSE was 65.29 mm; without scaling, it increased to 115.16 mm. Scaling therefore reduced validation RMSE by 43.31%.** 
 
-<img width="761" height="441" alt="image" src="https://github.com/user-attachments/assets/af6175f5-424e-458d-b25e-635bdfa2040e" />
+![Min-Max Scaling](figures/1_MinMax%20scaling.png)
 
 **Figure 1. Validation RMSE with and without MinMax scaling.**
 
@@ -152,7 +152,7 @@ def run_experiment(name, technique, cfg):
 
 ## 4.4 Learning Rate and Optimization Stability
 
-<img width="1013" height="562" alt="image" src="https://github.com/user-attachments/assets/634b7ae2-6696-48d1-a6ae-a83edd1a18dc" />
+![Learning Rate Stability](figures/3_Learning%20Rate%20Stability.png)
 
 **Figure 3. Validation loss for learning rates 0.01, 0.001, and 0.0001.**
 
@@ -171,11 +171,11 @@ def run_experiment(name, technique, cfg):
 
 **The selected model reduced test RMSE by 24.00% and MAE by 19.46% relative to the baseline. Test R² increased by 0.059, from 0.860 to 0.919.**
 
-<img width="1038" height="481" alt="image" src="https://github.com/user-attachments/assets/3d4d00a6-3f01-41b0-9580-6fc4cd2e90c4" />
+![Baseline Loss](figures/4_Baseline_Loss.png)
 
 **Figure 4. Baseline LSTM training and validation loss.**
 
-<img width="1009" height="500" alt="image" src="https://github.com/user-attachments/assets/4034bbfe-223b-45de-94a3-6c4da1b7b260" />
+![Final Loss](figures/5_Final_Loss.png)
 
 **Figure 5. Final validation-selected LSTM loss with early stopping.**
 
@@ -193,7 +193,7 @@ def run_experiment(name, technique, cfg):
 | Gaussian noise 0.03 | 65.29 | 60.79 | Improved by 4.50 mm and increased robustness. |
 | Early stopping | 73.34 | 57.46 | Improved by 15.89 mm versus 150 epochs without stopping. |
 
-<img width="1053" height="527" alt="image" src="https://github.com/user-attachments/assets/57d6582a-ce38-4cdd-a251-9183913437ab" />
+![Regularization Ablation](figures/6_Regularization%20Ablation.png)
 
 **Figure 6. Validation RMSE for regularization and early-stopping experiments.**
 
@@ -218,14 +218,14 @@ def run_experiment(name, technique, cfg):
 | S0 | B0 | +49.87 mm | Degraded |
 | BN | B0 | +199.30 mm | Degraded |
 
-<img width="1070" height="514" alt="image" src="https://github.com/user-attachments/assets/6f674f09-2400-4864-8527-34cfc783b654" />
+![Controlled Ablation](figures/7_Controlled%20Ablation.png)
 
 **Figure 7. Controlled RMSE difference from the matched reference.**
 **A negative RMSE difference shows an improvement over the technique’s corresponding reference model, while a positive one shows model’s quality decline. Early stopping had the best improvement.** 
 
 ## 5.4 2025 Test Predictions 
 
-<img width="1065" height="484" alt="image" src="https://github.com/user-attachments/assets/273092a5-2f8d-4266-88d4-614e37f59125" />
+![2025 Predictions](figures/8_2025%20Predictions.png)
 
 **Figure 8. Actual 2025 monthly rainfall compared with baseline and selected final LSTM predictions.**
 
